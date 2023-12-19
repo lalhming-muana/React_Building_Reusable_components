@@ -1,3 +1,11 @@
+
+/**
+ * 
+ * Hetah hian duh chuan kan props hman tur kha kan dah nghal thei
+ *   
+ * function ProfileCard({hming, awmna}){}
+ *  
+ */
 function ProfileCard(props){
 
     /**
@@ -12,9 +20,11 @@ function ProfileCard(props){
      */
 
     return (<div>
+        <img src={props.milem} alt="pda logo"/>
         <div>{props.hming}</div>
         <div>{props.awmna}</div>
-    </div>);
+        </div>
+    );
 }
 
 export default ProfileCard;
