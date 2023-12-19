@@ -19,10 +19,21 @@ function ProfileCard(props){
      * const {hming, awmna} = props; 
      */
 
-    return (<div>
-        <img src={props.milem} alt="pda logo"/>
-        <div>{props.hming}</div>
-        <div>{props.awmna}</div>
+    return (<div className="card">
+            <div className="card-image">
+                     <figure className="image is-1by1">
+                        <img src={props.milem} alt="pda logo"/>
+                    </figure>
+            </div>
+        <div className="card-content">
+            <div className="media-content">
+                <p className="title is-4">{props.hming}</p>
+                <p className="subtitle is-6">{props.awmna}</p>
+        </div>
+            <div className="content">
+              {props.description}
+            </div>
+        </div>
         </div>
     );
 }
